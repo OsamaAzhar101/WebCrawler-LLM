@@ -13,6 +13,8 @@ from utils.scraper_utils import (
     get_llm_strategy,
 )
 
+from utils.product_scraper import scrape_product
+
 load_dotenv()
 
 
@@ -72,11 +74,34 @@ async def crawl_venues():
     llm_strategy.show_usage()
 
 
+async def scrape_single_product():
+    """
+    Prompts user for a product URL and scrapes product details.
+    """
+    url = input("Enter the product URL: ")
+    product = await scrape_product(url)
+    if product:
+        print("Product details found:")
+        print(product)
+    else:
+        print("No product details could be extracted.")
+
+
 async def main():
     """
     Entry point of the script.
     """
-    await crawl_venues()
+    print("Choose an option:")
+    print("1. Crawl venues")
+    print("2. Scrape a single product")
+    choice = input("Enter 1 or 2: ")
+    if choice == "1":
+        await crawl_venues()
+    elif choice == "2":
+        await scrape_single_product()
+    else:
+        print("Invalid choice.")
+
 
 
 if __name__ == "__main__":
