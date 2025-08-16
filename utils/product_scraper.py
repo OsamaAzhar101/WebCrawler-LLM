@@ -7,31 +7,26 @@ from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, LLMExtrac
 
 def get_default_selector(url: str) -> str | None:
     domain = urlparse(url).netloc.lower()
-    if "amazon." in domain:
-        # Prioritize price selectors first, then others
-        return (
-            ".a-price .a-offscreen, "
-            ".aok-offscreen, "
-            "#corePriceDisplay, "
-            "#corePriceDisplay_desktop_feature_div, "
-            "#priceblock_ourprice, "
-            "#priceblock_dealprice, "
-            "#priceblock_saleprice, "
-            "#titleSection, "
-            "#bylineInfo"
-        )
-    return None
+    if "pakwheels.com" in domain:
+        # Example selectors for PakWheels car listings
+        return ".search-title, .price, .make-model, .year, .mileage"
+    # Add more domain-specific selectors as needed
+    return None  # Let user provide selector if not recognized
 
-async def scrape_product(url: str) -> dict:
+
+async def scrape_car_product(url: str, css_selector: str = None) -> dict:
     """
-    Scrapes product details from a given URL using LLM extraction.
+    Scrapes car details from a given URL using LLM extraction.
 
     Args:
-        url (str): The product page URL.
+        url (str): The car listing page URL.
+        css_selector (str): Optional CSS selector for relevant content.
 
     Returns:
-        dict: Extracted product details (Price, Product Name, Title, Brand).
+        dict: Extracted car details.
     """
+
+
     browser_config = BrowserConfig(
         browser_type="chromium",
         # headless=True,
@@ -39,13 +34,18 @@ async def scrape_product(url: str) -> dict:
         verbose=False,
     )
 
-    # Define a generic schema for product extraction
+    # Generic schema for car extraction
     schema = {
-        "title": {"type": "string", "description": "Product title"},
-        "name": {"type": "string", "description": "Product name"},
-        "brand": {"type": "string", "description": "Brand name"},
-        "price": {"type": "string", "description": "Product price"},
+        "name": {"type": "string", "description": "Car name"},
+        "brand": {"type": "string", "description": "Car brand"},
+        "model": {"type": "string", "description": "Car model"},
+        "year": {"type": "string", "description": "Manufacturing year"},
+        "price": {"type": "string", "description": "Car price"},
+        "mileage": {"type": "string", "description": "Car mileage"},
+        "location": {"type": "string", "description": "Location"},
     }
+
+
 
     llm_strategy = LLMExtractionStrategy(
         provider="groq/deepseek-r1-distill-llama-70b",
@@ -53,25 +53,26 @@ async def scrape_product(url: str) -> dict:
         schema=schema,
         extraction_type="schema",
         instruction=(
-            "Extract the product's title, name, brand, and price from the following content. "
+            "Extract all car objects with 'name', 'brand', 'model', 'year', 'price', 'mileage', and 'location' from the following content. "
             "Return empty string for any field not found."
         ),
         input_format="markdown",
         verbose=False,
     )
 
-    css_selector = get_default_selector(url)
+    # Use default selector if not provided
+    if not css_selector:
+        css_selector = get_default_selector(url)
     print(f"Using CSS selector: {css_selector}", flush=True)
 
     async with AsyncWebCrawler(config=browser_config) as crawler:
-        await asyncio.sleep(3)  # Add a 3 second delay after page load
-
+        await asyncio.sleep(3)
         result = await crawler.arun(
             url=url,
             config=CrawlerRunConfig(
                 extraction_strategy=llm_strategy,
-                session_id="product_scrape_session",
-                css_selector=css_selector,  
+                session_id="car_scrape_session",
+                css_selector=css_selector,
             ),
         )
 

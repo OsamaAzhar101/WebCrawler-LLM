@@ -13,7 +13,7 @@ from utils.scraper_utils import (
     get_llm_strategy,
 )
 
-from utils.product_scraper import scrape_product
+from utils.product_scraper import scrape_car_product
 
 load_dotenv()
 
@@ -79,7 +79,7 @@ async def scrape_single_product():
     Prompts user for a product URL and scrapes product details.
     """
     url = input("Enter the product URL: ")
-    product = await scrape_product(url)
+    product = await scrape_car_product(url)
     if product:
         print("Product details found:")
         print(product)
