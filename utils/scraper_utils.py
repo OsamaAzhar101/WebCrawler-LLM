@@ -20,6 +20,112 @@ from utils.data_utils import (
     is_complete_venue,  # Add this import
     is_duplicate_venue,  # Add this import
 )
+
+def get_llm_strategy_for_companies() -> LLMExtractionStrategy:
+    """
+    Returns the configuration for the language model extraction strategy for companies.
+    """
+    return LLMExtractionStrategy(
+        llm_config=LLMConfig(
+            # provider="groq/deepseek-r1-distill-llama-70b",
+            provider="llama-3.1-70b-versatile",  # <-- Update to a supported model
+            api_token=os.getenv("GROQ_API_KEY"),
+        ),
+        schema={
+            "type": "object",
+            "properties": {
+                "company_name": {"type": "string"},
+                "mobile_phone": {"type": "string"},
+                "ceo_phone": {"type": "string"},
+                "website_url": {"type": "string"},
+                "direct_page_link": {"type": "string"},
+                "address": {"type": "string"},
+            },
+            "required": [
+                "company_name",
+                "mobile_phone",
+                "ceo_phone",
+                "website_url",
+                "direct_page_link",
+                "address",
+            ],
+        },
+        extraction_type="schema",
+        instruction=(
+            "Extract for each company: 'company_name', 'mobile_phone', 'ceo_phone', "
+            "'website_url', 'direct_page_link' (the URL of the company listing), and 'address' "
+            "from the following content. If any field is not available, use an empty string. "
+            "Ensure all data is accurate and up-to-date."
+        ),
+        input_format="markdown",
+        verbose=True,
+    )
+
+async def fetch_and_process_company_page(
+    crawler: AsyncWebCrawler,
+    url: str,
+    css_selector: str,
+    llm_strategy: LLMExtractionStrategy,
+    session_id: str,
+    required_keys: List[str],
+    seen_names: Set[str],
+) -> List[dict]:
+    """
+    Fetches and processes a single page of company data.
+    """
+    print(f"Loading URL: {url}...")
+
+    result = await crawler.arun(
+        url=url,
+        config=CrawlerRunConfig(
+            cache_mode=CacheMode.BYPASS,
+            extraction_strategy=llm_strategy,
+            css_selector=css_selector,
+            session_id=session_id,
+        ),
+    )
+
+    if not (result.success and result.extracted_content):
+        print(f"Error fetching URL {url}: {result.error_message}")
+        return []
+
+    extracted_data = json.loads(result.extracted_content)
+    if not extracted_data:
+        print(f"No companies found on {url}.")
+        return []
+
+    print("Extracted data:", extracted_data)
+
+    complete_companies = []
+    for company in extracted_data:
+        # Mark incomplete fields with empty strings
+        for key in required_keys:
+            if key not in company or company[key] is None:
+                company[key] = ""
+
+        if not company.get("company_name"):
+            continue
+
+        if company["company_name"] in seen_names:
+            print(f"Duplicate company '{company['company_name']}' found. Skipping.")
+            continue
+
+        # Add direct page link if not present
+        if not company.get("direct_page_link"):
+            company["direct_page_link"] = url
+
+        seen_names.add(company["company_name"])
+        complete_companies.append(company)
+
+    if not complete_companies:
+        print(f"No complete companies found on {url}.")
+        return []
+
+    print(f"Extracted {len(complete_companies)} companies from {url}.")
+    return complete_companies
+
+
+
 def get_browser_config() -> BrowserConfig:
     """
     Returns the browser configuration for the crawler.

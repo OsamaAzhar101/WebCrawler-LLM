@@ -2,6 +2,8 @@
 
 BASE_URL = "https://www.theknot.com/marketplace/wedding-reception-venues-atlanta-ga"
 CSS_SELECTOR = "[class^='info-container']"
+
+
 # List of URLs to scrape
 BUSINESS_URLS = [
     "https://www.katanning.com.au/businesses/",

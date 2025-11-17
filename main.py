@@ -17,13 +17,72 @@ from utils.scraper_utils import (
     get_llm_strategy,
     get_llm_strategy_for_businesses,
     get_css_selector_for_url,
+    get_llm_strategy_for_companies,
+    fetch_and_process_company_page,
 )
 
 from utils.product_scraper import scrape_product
 
 load_dotenv()
 
+async def crawl_outreach_companies():
+    """
+    Crawl companies for outreach purposes from rekvizitai.vz.lt.
+    """
+    import pandas as pd
 
+    # Configurations for outreach crawl
+    browser_config = get_browser_config()
+    llm_strategy = get_llm_strategy_for_companies()
+    session_id = "outreach_crawl_session"
+    base_url = "https://rekvizitai.vz.lt/imoniu-paieska/1/"
+    css_selector = ".company"  # Update this selector as needed
+    required_keys = [
+        "company_name",
+        "mobile_phone",
+        "ceo_phone",
+        "website_url",
+        "direct_page_link",
+        "address",
+    ]
+    seen_names = set()
+    all_companies = []
+
+    async with AsyncWebCrawler(config=browser_config) as crawler:
+        page = 1
+        while True:
+            url = f"{base_url}?page={page}"
+            print(f"\n{'='*60}")
+            print(f"Scraping: {url}")
+            print(f"{'='*60}\n")
+            companies = await fetch_and_process_company_page(
+                crawler,
+                url,
+                css_selector,
+                llm_strategy,
+                session_id,
+                required_keys,
+                seen_names,
+            )
+            if not companies:
+                print("No more companies found or extraction failed. Ending crawl.")
+                break
+            all_companies.extend(companies)
+            page += 1
+            await asyncio.sleep(2)
+
+    if all_companies:
+        df = pd.DataFrame(all_companies)
+        df.to_excel("outreach_companies.xlsx", index=False)
+        print(f"\n{'='*60}")
+        print(f"Saved {len(all_companies)} companies to 'outreach_companies.xlsx'.")
+        print(f"{'='*60}\n")
+    else:
+        print("No companies were found during the crawl.")
+
+    llm_strategy.show_usage()
+
+    
 async def crawl_businesses():
     """
     Main function to crawl business data from Western Australian town directories.
@@ -154,13 +213,16 @@ async def main():
     print("1. Crawl venues")
     print("2. Scrape a single product")
     print("3. Crawl Western Australian businesses")
-    choice = input("Enter 1, 2, or 3: ")
+    print("4. Crawl companies for outreach (rekvizitai.vz.lt)")
+    choice = input("Enter 1, 2, 3, or 4: ")
     if choice == "1":
         await crawl_venues()
     elif choice == "2":
         await scrape_single_product()
     elif choice == "3":
         await crawl_businesses()
+    elif choice == "4":
+        await crawl_outreach_companies()
     else:
         print("Invalid choice.")
 
