@@ -1,0 +1,454 @@
+Collecting crawl4ai
+  Obtaining dependency information for crawl4ai from https://files.pythonhosted.org/packages/33/19/2bc4502e093a3e946f93acdee2f200ee89506311e98a83b3b5d98c8c1596/crawl4ai-0.7.7-py3-none-any.whl.metadata
+  Downloading crawl4ai-0.7.7-py3-none-any.whl.metadata (48 kB)
+     -------------------------------------- 48.3/48.3 kB 346.1 kB/s eta 0:00:00
+Collecting aiofiles>=24.1.0 (from crawl4ai)
+  Obtaining dependency information for aiofiles>=24.1.0 from https://files.pythonhosted.org/packages/bc/8a/340a1555ae33d7354dbca4faa54948d76d89a27ceef032c8c3bc661d003e/aiofiles-25.1.0-py3-none-any.whl.metadata
+  Downloading aiofiles-25.1.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting aiohttp>=3.11.11 (from crawl4ai)
+  Obtaining dependency information for aiohttp>=3.11.11 from https://files.pythonhosted.org/packages/0a/0d/b10ac09069973d112de6ef980c1f6bb31cb7dcd0bc363acbdad58f927873/aiohttp-3.13.2-cp312-cp312-win_amd64.whl.metadata
+  Downloading aiohttp-3.13.2-cp312-cp312-win_amd64.whl.metadata (8.4 kB)
+Collecting aiosqlite~=0.20 (from crawl4ai)
+  Obtaining dependency information for aiosqlite~=0.20 from https://files.pythonhosted.org/packages/f5/10/6c25ed6de94c49f88a91fa5018cb4c0f3625f31d5be9f771ebe5cc7cd506/aiosqlite-0.21.0-py3-none-any.whl.metadata
+  Downloading aiosqlite-0.21.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting anyio>=4.0.0 (from crawl4ai)
+  Obtaining dependency information for anyio>=4.0.0 from https://files.pythonhosted.org/packages/15/b3/9b1a8074496371342ec1e796a96f99c82c945a339cd81a8e73de28b4cf9e/anyio-4.11.0-py3-none-any.whl.metadata
+  Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting lxml~=5.3 (from crawl4ai)
+  Obtaining dependency information for lxml~=5.3 from https://files.pythonhosted.org/packages/91/1e/05ddcb57ad2f3069101611bd5f5084157d90861a2ef460bf42f45cced944/lxml-5.4.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading lxml-5.4.0-cp312-cp312-win_amd64.whl.metadata (3.6 kB)
+Collecting litellm>=1.53.1 (from crawl4ai)
+  Obtaining dependency information for litellm>=1.53.1 from https://files.pythonhosted.org/packages/ea/53/aa31e4d057b3746b3c323ca993003d6cf15ef987e7fe7ceb53681695ae87/litellm-1.80.0-py3-none-any.whl.metadata
+  Downloading litellm-1.80.0-py3-none-any.whl.metadata (30 kB)
+Collecting numpy<3,>=1.26.0 (from crawl4ai)
+  Obtaining dependency information for numpy<3,>=1.26.0 from https://files.pythonhosted.org/packages/2d/57/8aeaf160312f7f489dea47ab61e430b5cb051f59a98ae68b7133ce8fa06a/numpy-2.3.5-cp312-cp312-win_amd64.whl.metadata
+  Downloading numpy-2.3.5-cp312-cp312-win_amd64.whl.metadata (60 kB)
+     ---------------------------------------- 60.9/60.9 kB 3.4 MB/s eta 0:00:00
+Collecting pillow>=10.4 (from crawl4ai)
+  Obtaining dependency information for pillow>=10.4 from https://files.pythonhosted.org/packages/a2/0b/d87733741526541c909bbf159e338dcace4f982daac6e5a8d6be225ca32d/pillow-12.0.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading pillow-12.0.0-cp312-cp312-win_amd64.whl.metadata (9.0 kB)
+Collecting playwright>=1.49.0 (from crawl4ai)
+  Obtaining dependency information for playwright>=1.49.0 from https://files.pythonhosted.org/packages/64/27/f13b538fbc6b7a00152f4379054a49f6abc0bf55ac86f677ae54bc49fb82/playwright-1.56.0-py3-none-win_amd64.whl.metadata
+  Downloading playwright-1.56.0-py3-none-win_amd64.whl.metadata (3.5 kB)
+Collecting patchright>=1.49.0 (from crawl4ai)
+  Obtaining dependency information for patchright>=1.49.0 from https://files.pythonhosted.org/packages/95/8d/37cc3127c6085ffa6482832a07f84587f2f04dbbaf194cc395bb2afa811c/patchright-1.56.0-py3-none-win_amd64.whl.metadata
+  Downloading patchright-1.56.0-py3-none-win_amd64.whl.metadata (12 kB)
+Collecting python-dotenv~=1.0 (from crawl4ai)
+  Obtaining dependency information for python-dotenv~=1.0 from https://files.pythonhosted.org/packages/14/1b/a298b06749107c305e1fe0f814c6c74aea7b2f1e10989cb30f544a1b3253/python_dotenv-1.2.1-py3-none-any.whl.metadata
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting requests~=2.26 (from crawl4ai)
+  Obtaining dependency information for requests~=2.26 from https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl.metadata
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4~=4.12 (from crawl4ai)
+  Obtaining dependency information for beautifulsoup4~=4.12 from https://files.pythonhosted.org/packages/94/fe/3aed5d0be4d404d12d36ab97e2f1791424d9ca39c2f754a6285d59a3b01d/beautifulsoup4-4.14.2-py3-none-any.whl.metadata
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting tf-playwright-stealth>=1.1.0 (from crawl4ai)
+  Obtaining dependency information for tf-playwright-stealth>=1.1.0 from https://files.pythonhosted.org/packages/11/3d/2653f4cf49660bb44eeac8270617cc4c0287d61716f249f55053f0af0724/tf_playwright_stealth-1.2.0-py3-none-any.whl.metadata
+  Downloading tf_playwright_stealth-1.2.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting xxhash~=3.4 (from crawl4ai)
+  Obtaining dependency information for xxhash~=3.4 from https://files.pythonhosted.org/packages/13/5d/0d125536cbe7565a83d06e43783389ecae0c0f2ed037b48ede185de477c0/xxhash-3.6.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading xxhash-3.6.0-cp312-cp312-win_amd64.whl.metadata (13 kB)
+Collecting rank-bm25~=0.2 (from crawl4ai)
+  Obtaining dependency information for rank-bm25~=0.2 from https://files.pythonhosted.org/packages/2a/21/f691fb2613100a62b3fa91e9988c991e9ca5b89ea31c0d3152a3210344f9/rank_bm25-0.2.2-py3-none-any.whl.metadata
+  Downloading rank_bm25-0.2.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting snowballstemmer~=2.2 (from crawl4ai)
+  Obtaining dependency information for snowballstemmer~=2.2 from https://files.pythonhosted.org/packages/ed/dc/c02e01294f7265e63a7315fe086dd1df7dacb9f840a804da846b96d01b96/snowballstemmer-2.2.0-py2.py3-none-any.whl.metadata
+  Downloading snowballstemmer-2.2.0-py2.py3-none-any.whl.metadata (6.5 kB)
+Collecting pydantic>=2.10 (from crawl4ai)
+  Obtaining dependency information for pydantic>=2.10 from https://files.pythonhosted.org/packages/82/2f/e68750da9b04856e2a7ec56fc6f034a5a79775e9b9a81882252789873798/pydantic-2.12.4-py3-none-any.whl.metadata
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+     ---------------------------------------- 89.9/89.9 kB 5.0 MB/s eta 0:00:00
+Collecting pyOpenSSL>=25.3.0 (from crawl4ai)
+  Obtaining dependency information for pyOpenSSL>=25.3.0 from https://files.pythonhosted.org/packages/d1/81/ef2b1dfd1862567d573a4fdbc9f969067621764fbb74338496840a1d2977/pyopenssl-25.3.0-py3-none-any.whl.metadata
+  Downloading pyopenssl-25.3.0-py3-none-any.whl.metadata (17 kB)
+Collecting psutil>=6.1.1 (from crawl4ai)
+  Obtaining dependency information for psutil>=6.1.1 from https://files.pythonhosted.org/packages/55/4c/c3ed1a622b6ae2fd3c945a366e64eb35247a31e4db16cf5095e269e8eb3c/psutil-7.1.3-cp37-abi3-win_amd64.whl.metadata
+  Downloading psutil-7.1.3-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting PyYAML>=6.0 (from crawl4ai)
+  Obtaining dependency information for PyYAML>=6.0 from https://files.pythonhosted.org/packages/86/bf/899e81e4cce32febab4fb42bb97dcdf66bc135272882d1987881a4b519e9/pyyaml-6.0.3-cp312-cp312-win_amd64.whl.metadata
+  Downloading pyyaml-6.0.3-cp312-cp312-win_amd64.whl.metadata (2.4 kB)
+Collecting nltk>=3.9.1 (from crawl4ai)
+  Obtaining dependency information for nltk>=3.9.1 from https://files.pythonhosted.org/packages/60/90/81ac364ef94209c100e12579629dc92bf7a709a84af32f8c551b02c07e94/nltk-3.9.2-py3-none-any.whl.metadata
+  Downloading nltk-3.9.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting rich>=13.9.4 (from crawl4ai)
+  Obtaining dependency information for rich>=13.9.4 from https://files.pythonhosted.org/packages/25/7a/b0178788f8dc6cafce37a212c99565fa1fe7872c70c6c9c1e1a372d9d88f/rich-14.2.0-py3-none-any.whl.metadata
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting cssselect>=1.2.0 (from crawl4ai)
+  Obtaining dependency information for cssselect>=1.2.0 from https://files.pythonhosted.org/packages/ee/58/257350f7db99b4ae12b614a36256d9cc870d71d9e451e79c2dc3b23d7c3c/cssselect-1.3.0-py3-none-any.whl.metadata
+  Downloading cssselect-1.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting httpx>=0.27.2 (from crawl4ai)
+  Obtaining dependency information for httpx>=0.27.2 from https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl.metadata
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting fake-useragent>=2.0.3 (from crawl4ai)
+  Obtaining dependency information for fake-useragent>=2.0.3 from https://files.pythonhosted.org/packages/51/37/b3ea9cd5558ff4cb51957caca2193981c6b0ff30bd0d2630ac62505d99d0/fake_useragent-2.2.0-py3-none-any.whl.metadata
+  Downloading fake_useragent-2.2.0-py3-none-any.whl.metadata (17 kB)
+Collecting click>=8.1.7 (from crawl4ai)
+  Obtaining dependency information for click>=8.1.7 from https://files.pythonhosted.org/packages/98/78/01c019cdb5d6498122777c1a43056ebb3ebfeef2076d9d026bfe15583b2b/click-8.3.1-py3-none-any.whl.metadata
+  Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting chardet>=5.2.0 (from crawl4ai)
+  Obtaining dependency information for chardet>=5.2.0 from https://files.pythonhosted.org/packages/38/6f/f5fbc992a329ee4e0f288c1fe0e2ad9485ed064cac731ed2fe47dcc38cbf/chardet-5.2.0-py3-none-any.whl.metadata
+  Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting brotli>=1.1.0 (from crawl4ai)
+  Obtaining dependency information for brotli>=1.1.0 from https://files.pythonhosted.org/packages/1c/4e/bc1dcac9498859d5e353c9b153627a3752868a9d5f05ce8dedd81a2354ab/brotli-1.2.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading brotli-1.2.0-cp312-cp312-win_amd64.whl.metadata (6.3 kB)
+Collecting humanize>=4.10.0 (from crawl4ai)
+  Obtaining dependency information for humanize>=4.10.0 from https://files.pythonhosted.org/packages/c3/5b/9512c5fb6c8218332b530f13500c6ff5f3ce3342f35e0dd7be9ac3856fd3/humanize-4.14.0-py3-none-any.whl.metadata
+  Downloading humanize-4.14.0-py3-none-any.whl.metadata (7.8 kB)
+Collecting lark>=1.2.2 (from crawl4ai)
+  Obtaining dependency information for lark>=1.2.2 from https://files.pythonhosted.org/packages/82/3d/14ce75ef66813643812f3093ab17e46d3a206942ce7376d31ec2d36229e7/lark-1.3.1-py3-none-any.whl.metadata
+  Downloading lark-1.3.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting alphashape>=1.3.1 (from crawl4ai)
+  Obtaining dependency information for alphashape>=1.3.1 from https://files.pythonhosted.org/packages/e4/ad/77fad9d6f974ec58d837cb49fb9b483d6227a420c4f908c3578633de1d47/alphashape-1.3.1-py2.py3-none-any.whl.metadata
+  Downloading alphashape-1.3.1-py2.py3-none-any.whl.metadata (18 kB)
+Collecting shapely>=2.0.0 (from crawl4ai)
+  Obtaining dependency information for shapely>=2.0.0 from https://files.pythonhosted.org/packages/ec/bf/cb6c1c505cb31e818e900b9312d514f381fbfa5c4363edfce0fcc4f8c1a4/shapely-2.1.2-cp312-cp312-win_amd64.whl.metadata
+  Downloading shapely-2.1.2-cp312-cp312-win_amd64.whl.metadata (7.1 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for aiohappyeyeballs>=2.5.0 from https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for aiosignal>=1.4.0 from https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl.metadata
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for attrs>=17.3.0 from https://files.pythonhosted.org/packages/3a/2a/7cc015f5b9f5db42b7d48157e23356022889fc354a2813c15934b7cb5c0e/attrs-25.4.0-py3-none-any.whl.metadata
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for frozenlist>=1.1.1 from https://files.pythonhosted.org/packages/b8/af/38e51a553dd66eb064cdf193841f16f077585d4d28394c2fa6235cb41765/frozenlist-1.8.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading frozenlist-1.8.0-cp312-cp312-win_amd64.whl.metadata (21 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for multidict<7.0,>=4.5 from https://files.pythonhosted.org/packages/46/e2/348cd32faad84eaf1d20cce80e2bb0ef8d312c55bca1f7fa9865e7770aaf/multidict-6.7.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading multidict-6.7.0-cp312-cp312-win_amd64.whl.metadata (5.5 kB)
+Collecting propcache>=0.2.0 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for propcache>=0.2.0 from https://files.pythonhosted.org/packages/54/09/d19cff2a5aaac632ec8fc03737b223597b1e347416934c1b3a7df079784c/propcache-0.4.1-cp312-cp312-win_amd64.whl.metadata
+  Downloading propcache-0.4.1-cp312-cp312-win_amd64.whl.metadata (14 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp>=3.11.11->crawl4ai)
+  Obtaining dependency information for yarl<2.0,>=1.17.0 from https://files.pythonhosted.org/packages/c8/9a/6ad1a9b37c2f72874f93e691b2e7ecb6137fb2b899983125db4204e47575/yarl-1.22.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading yarl-1.22.0-cp312-cp312-win_amd64.whl.metadata (77 kB)
+     ---------------------------------------- 77.6/77.6 kB 4.2 MB/s eta 0:00:00
+Collecting typing_extensions>=4.0 (from aiosqlite~=0.20->crawl4ai)
+  Obtaining dependency information for typing_extensions>=4.0 from https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting click-log>=0.3.2 (from alphashape>=1.3.1->crawl4ai)
+  Obtaining dependency information for click-log>=0.3.2 from https://files.pythonhosted.org/packages/ae/5a/4f025bc751087833686892e17e7564828e409c43b632878afeae554870cd/click_log-0.4.0-py2.py3-none-any.whl.metadata
+  Downloading click_log-0.4.0-py2.py3-none-any.whl.metadata (1.2 kB)
+Collecting trimesh>=3.9.8 (from alphashape>=1.3.1->crawl4ai)
+  Obtaining dependency information for trimesh>=3.9.8 from https://files.pythonhosted.org/packages/fc/73/719ce8e11262d1fd42d0d24a98cee862c05d5f40b7869ad463c0912ea5d4/trimesh-4.9.0-py3-none-any.whl.metadata
+  Downloading trimesh-4.9.0-py3-none-any.whl.metadata (18 kB)
+Collecting networkx>=2.5 (from alphashape>=1.3.1->crawl4ai)
+  Obtaining dependency information for networkx>=2.5 from https://files.pythonhosted.org/packages/eb/8d/776adee7bbf76365fdd7f2552710282c79a4ead5d2a46408c9043a2b70ba/networkx-3.5-py3-none-any.whl.metadata
+  Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Collecting rtree>=0.9.7 (from alphashape>=1.3.1->crawl4ai)
+  Obtaining dependency information for rtree>=0.9.7 from https://files.pythonhosted.org/packages/74/25/5282c8270bfcd620d3e73beb35b40ac4ab00f0a898d98ebeb41ef0989ec8/rtree-1.4.1-py3-none-win_amd64.whl.metadata
+  Downloading rtree-1.4.1-py3-none-win_amd64.whl.metadata (2.2 kB)
+Collecting scipy>=1.0.0 (from alphashape>=1.3.1->crawl4ai)
+  Obtaining dependency information for scipy>=1.0.0 from https://files.pythonhosted.org/packages/c2/7f/acbd28c97e990b421af7d6d6cd416358c9c293fc958b8529e0bd5d2a2a19/scipy-1.16.3-cp312-cp312-win_amd64.whl.metadata
+  Downloading scipy-1.16.3-cp312-cp312-win_amd64.whl.metadata (60 kB)
+     ---------------------------------------- 60.8/60.8 kB ? eta 0:00:00
+Collecting idna>=2.8 (from anyio>=4.0.0->crawl4ai)
+  Obtaining dependency information for idna>=2.8 from https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl.metadata
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting sniffio>=1.1 (from anyio>=4.0.0->crawl4ai)
+  Obtaining dependency information for sniffio>=1.1 from https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl.metadata
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4~=4.12->crawl4ai)
+  Obtaining dependency information for soupsieve>1.2 from https://files.pythonhosted.org/packages/14/a0/bb38d3b76b8cae341dad93a2dd83ab7462e6dbcdd84d43f54ee60a8dc167/soupsieve-2.8-py3-none-any.whl.metadata
+  Downloading soupsieve-2.8-py3-none-any.whl.metadata (4.6 kB)
+Collecting colorama (from click>=8.1.7->crawl4ai)
+  Obtaining dependency information for colorama from https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl.metadata
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting certifi (from httpx>=0.27.2->crawl4ai)
+  Obtaining dependency information for certifi from https://files.pythonhosted.org/packages/70/7d/9bc192684cea499815ff478dfcdc13835ddf401365057044fb721ec6bddb/certifi-2025.11.12-py3-none-any.whl.metadata
+  Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx>=0.27.2->crawl4ai)
+  Obtaining dependency information for httpcore==1.* from https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl.metadata
+  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx>=0.27.2->crawl4ai)
+  Obtaining dependency information for h11>=0.16 from https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl.metadata
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting h2<5,>=3 (from httpx>=0.27.2->crawl4ai)
+  Obtaining dependency information for h2<5,>=3 from https://files.pythonhosted.org/packages/69/b2/119f6e6dcbd96f9069ce9a2665e0146588dc9f88f29549711853645e736a/h2-4.3.0-py3-none-any.whl.metadata
+  Downloading h2-4.3.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting fastuuid>=0.13.0 (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for fastuuid>=0.13.0 from https://files.pythonhosted.org/packages/cc/fc/f5c799a6ea6d877faec0472d0b27c079b47c86b1cdc577720a5386483b36/fastuuid-0.14.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading fastuuid-0.14.0-cp312-cp312-win_amd64.whl.metadata (1.1 kB)
+Collecting importlib-metadata>=6.8.0 (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for importlib-metadata>=6.8.0 from https://files.pythonhosted.org/packages/20/b0/36bd937216ec521246249be3bf9855081de4c5e06a0c9b4219dbeda50373/importlib_metadata-8.7.0-py3-none-any.whl.metadata
+  Downloading importlib_metadata-8.7.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting jinja2<4.0.0,>=3.1.2 (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for jinja2<4.0.0,>=3.1.2 from https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl.metadata
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema<5.0.0,>=4.22.0 (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for jsonschema<5.0.0,>=4.22.0 from https://files.pythonhosted.org/packages/bf/9c/8c95d856233c1f82500c2450b8c68576b4cf1c871db3afac5c34ff84e6fd/jsonschema-4.25.1-py3-none-any.whl.metadata
+  Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting openai>=1.99.5 (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for openai>=1.99.5 from https://files.pythonhosted.org/packages/5b/e1/0a6560bab7fb7b5a88d35a505b859c6d969cb2fa2681b568eb5d95019dec/openai-2.8.0-py3-none-any.whl.metadata
+  Downloading openai-2.8.0-py3-none-any.whl.metadata (29 kB)
+Collecting tiktoken>=0.7.0 (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for tiktoken>=0.7.0 from https://files.pythonhosted.org/packages/81/10/b8523105c590c5b8349f2587e2fdfe51a69544bd5a76295fc20f2374f470/tiktoken-0.12.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading tiktoken-0.12.0-cp312-cp312-win_amd64.whl.metadata (6.9 kB)
+Collecting tokenizers (from litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for tokenizers from https://files.pythonhosted.org/packages/b3/46/e33a8c93907b631a99377ef4c5f817ab453d0b34f93529421f42ff559671/tokenizers-0.22.1-cp39-abi3-win_amd64.whl.metadata
+  Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+Collecting joblib (from nltk>=3.9.1->crawl4ai)
+  Obtaining dependency information for joblib from https://files.pythonhosted.org/packages/1e/e8/685f47e0d754320684db4425a0967f7d3fa70126bffd76110b7009a0090f/joblib-1.5.2-py3-none-any.whl.metadata
+  Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting regex>=2021.8.3 (from nltk>=3.9.1->crawl4ai)
+  Obtaining dependency information for regex>=2021.8.3 from https://files.pythonhosted.org/packages/1a/67/3b92df89f179d7c367be654ab5626ae311cb28f7d5c237b6bb976cd5fbbb/regex-2025.11.3-cp312-cp312-win_amd64.whl.metadata
+  Downloading regex-2025.11.3-cp312-cp312-win_amd64.whl.metadata (41 kB)
+     ---------------------------------------- 41.5/41.5 kB ? eta 0:00:00
+Collecting tqdm (from nltk>=3.9.1->crawl4ai)
+  Obtaining dependency information for tqdm from https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl.metadata
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+     -------------------------------------- 57.7/57.7 kB 152.0 kB/s eta 0:00:00
+Collecting pyee<14,>=13 (from patchright>=1.49.0->crawl4ai)
+  Obtaining dependency information for pyee<14,>=13 from https://files.pythonhosted.org/packages/9b/4d/b9add7c84060d4c1906abe9a7e5359f2a60f7a9a4f67268b2766673427d8/pyee-13.0.0-py3-none-any.whl.metadata
+  Downloading pyee-13.0.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting greenlet<4.0.0,>=3.1.1 (from patchright>=1.49.0->crawl4ai)
+  Obtaining dependency information for greenlet<4.0.0,>=3.1.1 from https://files.pythonhosted.org/packages/e9/08/b0814846b79399e585f974bbeebf5580fbe59e258ea7be64d9dfb253c84f/greenlet-3.2.4-cp312-cp312-win_amd64.whl.metadata
+  Downloading greenlet-3.2.4-cp312-cp312-win_amd64.whl.metadata (4.2 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.10->crawl4ai)
+  Obtaining dependency information for annotated-types>=0.6.0 from https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl.metadata
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.5 (from pydantic>=2.10->crawl4ai)
+  Obtaining dependency information for pydantic-core==2.41.5 from https://files.pythonhosted.org/packages/86/45/00173a033c801cacf67c190fef088789394feaf88a98a7035b0e40d53dc9/pydantic_core-2.41.5-cp312-cp312-win_amd64.whl.metadata
+  Downloading pydantic_core-2.41.5-cp312-cp312-win_amd64.whl.metadata (7.4 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>=2.10->crawl4ai)
+  Obtaining dependency information for typing-inspection>=0.4.2 from https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl.metadata
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting cryptography<47,>=45.0.7 (from pyOpenSSL>=25.3.0->crawl4ai)
+  Obtaining dependency information for cryptography<47,>=45.0.7 from https://files.pythonhosted.org/packages/7e/bf/80fbf45253ea585a1e492a6a17efcb93467701fa79e71550a430c5e60df0/cryptography-46.0.3-cp311-abi3-win_amd64.whl.metadata
+  Downloading cryptography-46.0.3-cp311-abi3-win_amd64.whl.metadata (5.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests~=2.26->crawl4ai)
+  Obtaining dependency information for charset_normalizer<4,>=2 from https://files.pythonhosted.org/packages/3d/2d/1e5ed9dd3b3803994c155cd9aacb60c82c331bad84daf75bcb9c91b3295e/charset_normalizer-3.4.4-cp312-cp312-win_amd64.whl.metadata
+  Downloading charset_normalizer-3.4.4-cp312-cp312-win_amd64.whl.metadata (38 kB)
+Collecting urllib3<3,>=1.21.1 (from requests~=2.26->crawl4ai)
+  Obtaining dependency information for urllib3<3,>=1.21.1 from https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl.metadata
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.9.4->crawl4ai)
+  Obtaining dependency information for markdown-it-py>=2.2.0 from https://files.pythonhosted.org/packages/94/54/e7d793b573f298e1c9013b8c4dade17d481164aa517d1d7148619c2cedbf/markdown_it_py-4.0.0-py3-none-any.whl.metadata
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.9.4->crawl4ai)
+  Obtaining dependency information for pygments<3.0.0,>=2.13.0 from https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl.metadata
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting fake-http-header<0.4.0,>=0.3.5 (from tf-playwright-stealth>=1.1.0->crawl4ai)
+  Obtaining dependency information for fake-http-header<0.4.0,>=0.3.5 from https://files.pythonhosted.org/packages/e3/0b/2849c87d9f13766e29c0a2f4d31681aa72e035016b251ab19d99bde7b592/fake_http_header-0.3.5-py3-none-any.whl.metadata
+  Downloading fake_http_header-0.3.5-py3-none-any.whl.metadata (3.5 kB)
+Collecting cffi>=2.0.0 (from cryptography<47,>=45.0.7->pyOpenSSL>=25.3.0->crawl4ai)
+  Obtaining dependency information for cffi>=2.0.0 from https://files.pythonhosted.org/packages/f8/ed/13bd4418627013bec4ed6e54283b1959cf6db888048c7cf4b4c3b5b36002/cffi-2.0.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading cffi-2.0.0-cp312-cp312-win_amd64.whl.metadata (2.6 kB)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx>=0.27.2->crawl4ai)
+  Obtaining dependency information for hyperframe<7,>=6.1 from https://files.pythonhosted.org/packages/48/30/47d0bf6072f7252e6521f3447ccfa40b421b6824517f82854703d0f5a98b/hyperframe-6.1.0-py3-none-any.whl.metadata
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.1 (from h2<5,>=3->httpx>=0.27.2->crawl4ai)
+  Obtaining dependency information for hpack<5,>=4.1 from https://files.pythonhosted.org/packages/07/c6/80c95b1b2b94682a72cbdbfb85b81ae2daffa4291fbfa1b1464502ede10d/hpack-4.1.0-py3-none-any.whl.metadata
+  Downloading hpack-4.1.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting zipp>=3.20 (from importlib-metadata>=6.8.0->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for zipp>=3.20 from https://files.pythonhosted.org/packages/2e/54/647ade08bf0db230bfea292f893923872fd20be6ac6f53b2b936ba839d75/zipp-3.23.0-py3-none-any.whl.metadata
+  Downloading zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2<4.0.0,>=3.1.2->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for MarkupSafe>=2.0 from https://files.pythonhosted.org/packages/aa/5b/bec5aa9bbbb2c946ca2733ef9c4ca91c91b6a24580193e891b5f7dbe8e1e/markupsafe-3.0.3-cp312-cp312-win_amd64.whl.metadata
+  Downloading markupsafe-3.0.3-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0.0,>=4.22.0->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for jsonschema-specifications>=2023.03.6 from https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.22.0->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for referencing>=0.28.4 from https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl.metadata
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema<5.0.0,>=4.22.0->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for rpds-py>=0.7.1 from https://files.pythonhosted.org/packages/1f/6a/51e9aeb444a00cdc520b032a28b07e5f8dc7bc328b57760c53e7f96997b4/rpds_py-0.29.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading rpds_py-0.29.0-cp312-cp312-win_amd64.whl.metadata (4.2 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.9.4->crawl4ai)
+  Obtaining dependency information for mdurl~=0.1 from https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl.metadata
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting distro<2,>=1.7.0 (from openai>=1.99.5->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for distro<2,>=1.7.0 from https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl.metadata
+  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting jiter<1,>=0.10.0 (from openai>=1.99.5->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for jiter<1,>=0.10.0 from https://files.pythonhosted.org/packages/1c/c7/6659f537f9562d963488e3e55573498a442503ced01f7e169e96a6110383/jiter-0.12.0-cp312-cp312-win_amd64.whl.metadata
+  Downloading jiter-0.12.0-cp312-cp312-win_amd64.whl.metadata (5.3 kB)
+Collecting huggingface-hub<2.0,>=0.16.4 (from tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for huggingface-hub<2.0,>=0.16.4 from https://files.pythonhosted.org/packages/33/3f/969137c9d9428ed8bf171d27604243dd950a47cac82414826e2aebbc0a4c/huggingface_hub-1.1.4-py3-none-any.whl.metadata
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography<47,>=45.0.7->pyOpenSSL>=25.3.0->crawl4ai)
+  Obtaining dependency information for pycparser from https://files.pythonhosted.org/packages/a0/e3/59cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe/pycparser-2.23-py3-none-any.whl.metadata
+  Downloading pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+Collecting filelock (from huggingface-hub<2.0,>=0.16.4->tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/76/91/7216b27286936c16f5b4d0c530087e4a54eead683e6b0b73dd0c64844af6/filelock-3.20.0-py3-none-any.whl.metadata
+  Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=0.16.4->tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for fsspec>=2023.5.0 from https://files.pythonhosted.org/packages/eb/02/a6b21098b1d5d6249b7c5ab69dde30108a71e4e819d4a9778f1de1d5b70d/fsspec-2025.10.0-py3-none-any.whl.metadata
+  Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.2.0 (from huggingface-hub<2.0,>=0.16.4->tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for hf-xet<2.0.0,>=1.2.0 from https://files.pythonhosted.org/packages/cb/44/870d44b30e1dcfb6a65932e3e1506c103a8a5aea9103c337e7a53180322c/hf_xet-1.2.0-cp37-abi3-win_amd64.whl.metadata
+  Downloading hf_xet-1.2.0-cp37-abi3-win_amd64.whl.metadata (5.0 kB)
+Collecting packaging>=20.9 (from huggingface-hub<2.0,>=0.16.4->tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for packaging>=20.9 from https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl.metadata
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting shellingham (from huggingface-hub<2.0,>=0.16.4->tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for shellingham from https://files.pythonhosted.org/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl.metadata
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting typer-slim (from huggingface-hub<2.0,>=0.16.4->tokenizers->litellm>=1.53.1->crawl4ai)
+  Obtaining dependency information for typer-slim from https://files.pythonhosted.org/packages/5e/dd/5cbf31f402f1cc0ab087c94d4669cfa55bd1e818688b910631e131d74e75/typer_slim-0.20.0-py3-none-any.whl.metadata
+  Downloading typer_slim-0.20.0-py3-none-any.whl.metadata (16 kB)
+Downloading crawl4ai-0.7.7-py3-none-any.whl (436 kB)
+   ---------------------------------------- 436.0/436.0 kB 6.8 MB/s eta 0:00:00
+Downloading aiofiles-25.1.0-py3-none-any.whl (14 kB)
+Downloading aiohttp-3.13.2-cp312-cp312-win_amd64.whl (453 kB)
+   --------------------------------------- 453.5/453.5 kB 14.3 MB/s eta 0:00:00
+Downloading aiosqlite-0.21.0-py3-none-any.whl (15 kB)
+Downloading alphashape-1.3.1-py2.py3-none-any.whl (13 kB)
+Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+   ---------------------------------------- 109.1/109.1 kB ? eta 0:00:00
+Downloading beautifulsoup4-4.14.2-py3-none-any.whl (106 kB)
+   ---------------------------------------- 106.4/106.4 kB 6.0 MB/s eta 0:00:00
+Downloading brotli-1.2.0-cp312-cp312-win_amd64.whl (369 kB)
+   --------------------------------------- 369.1/369.1 kB 11.6 MB/s eta 0:00:00
+Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+   --------------------------------------- 199.4/199.4 kB 12.6 MB/s eta 0:00:00
+Downloading click-8.3.1-py3-none-any.whl (108 kB)
+   ---------------------------------------- 108.3/108.3 kB ? eta 0:00:00
+Downloading cssselect-1.3.0-py3-none-any.whl (18 kB)
+Downloading fake_useragent-2.2.0-py3-none-any.whl (161 kB)
+   ---------------------------------------- 161.7/161.7 kB 9.5 MB/s eta 0:00:00
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+   ---------------------------------------- 73.5/73.5 kB ? eta 0:00:00
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+   ---------------------------------------- 78.8/78.8 kB 4.3 MB/s eta 0:00:00
+Downloading humanize-4.14.0-py3-none-any.whl (132 kB)
+   ---------------------------------------- 132.1/132.1 kB ? eta 0:00:00
+Downloading lark-1.3.1-py3-none-any.whl (113 kB)
+   ---------------------------------------- 113.2/113.2 kB 6.9 MB/s eta 0:00:00
+Downloading litellm-1.80.0-py3-none-any.whl (10.5 MB)
+   ---------------------------------------- 10.5/10.5 MB 8.3 MB/s eta 0:00:00
+Downloading lxml-5.4.0-cp312-cp312-win_amd64.whl (3.8 MB)
+   ---------------------------------------- 3.8/3.8 MB 10.6 MB/s eta 0:00:00
+Downloading nltk-3.9.2-py3-none-any.whl (1.5 MB)
+   ---------------------------------------- 1.5/1.5 MB 10.7 MB/s eta 0:00:00
+Downloading numpy-2.3.5-cp312-cp312-win_amd64.whl (12.8 MB)
+   ---------------------------------------- 12.8/12.8 MB 11.7 MB/s eta 0:00:00
+Downloading patchright-1.56.0-py3-none-win_amd64.whl (35.6 MB)
+   ---------------------------------------- 35.6/35.6 MB 9.9 MB/s eta 0:00:00
+Downloading pillow-12.0.0-cp312-cp312-win_amd64.whl (7.0 MB)
+   ---------------------------------------- 7.0/7.0 MB 10.2 MB/s eta 0:00:00
+Downloading playwright-1.56.0-py3-none-win_amd64.whl (35.6 MB)
+   ---------------------------------------- 35.6/35.6 MB 10.6 MB/s eta 0:00:00
+Downloading psutil-7.1.3-cp37-abi3-win_amd64.whl (247 kB)
+   --------------------------------------- 247.6/247.6 kB 14.8 MB/s eta 0:00:00
+Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+   ---------------------------------------- 463.4/463.4 kB 9.6 MB/s eta 0:00:00
+Downloading pydantic_core-2.41.5-cp312-cp312-win_amd64.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 10.7 MB/s eta 0:00:00
+Downloading pyopenssl-25.3.0-py3-none-any.whl (57 kB)
+   ---------------------------------------- 57.3/57.3 kB ? eta 0:00:00
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Downloading pyyaml-6.0.3-cp312-cp312-win_amd64.whl (154 kB)
+   ---------------------------------------- 154.0/154.0 kB 9.0 MB/s eta 0:00:00
+Downloading rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+   ---------------------------------------- 64.7/64.7 kB ? eta 0:00:00
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ---------------------------------------- 243.4/243.4 kB 7.5 MB/s eta 0:00:00
+Downloading shapely-2.1.2-cp312-cp312-win_amd64.whl (1.7 MB)
+   ---------------------------------------- 1.7/1.7 MB 12.1 MB/s eta 0:00:00
+Downloading snowballstemmer-2.2.0-py2.py3-none-any.whl (93 kB)
+   ---------------------------------------- 93.0/93.0 kB ? eta 0:00:00
+Downloading tf_playwright_stealth-1.2.0-py3-none-any.whl (33 kB)
+Downloading xxhash-3.6.0-cp312-cp312-win_amd64.whl (31 kB)
+Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+   ---------------------------------------- 67.6/67.6 kB ? eta 0:00:00
+Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+   ---------------------------------------- 159.4/159.4 kB 9.3 MB/s eta 0:00:00
+Downloading charset_normalizer-3.4.4-cp312-cp312-win_amd64.whl (107 kB)
+   ---------------------------------------- 107.1/107.1 kB ? eta 0:00:00
+Downloading click_log-0.4.0-py2.py3-none-any.whl (4.3 kB)
+Downloading cryptography-46.0.3-cp311-abi3-win_amd64.whl (3.5 MB)
+   ---------------------------------------- 3.5/3.5 MB 14.0 MB/s eta 0:00:00
+Downloading fake_http_header-0.3.5-py3-none-any.whl (14 kB)
+Downloading fastuuid-0.14.0-cp312-cp312-win_amd64.whl (156 kB)
+   ---------------------------------------- 156.6/156.6 kB 9.8 MB/s eta 0:00:00
+Downloading frozenlist-1.8.0-cp312-cp312-win_amd64.whl (44 kB)
+   ---------------------------------------- 44.6/44.6 kB ? eta 0:00:00
+Downloading greenlet-3.2.4-cp312-cp312-win_amd64.whl (299 kB)
+   --------------------------------------- 299.9/299.9 kB 18.1 MB/s eta 0:00:00
+Downloading h2-4.3.0-py3-none-any.whl (61 kB)
+   ---------------------------------------- 61.8/61.8 kB 3.2 MB/s eta 0:00:00
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+   ---------------------------------------- 71.0/71.0 kB ? eta 0:00:00
+Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ---------------------------------------- 134.9/134.9 kB 7.8 MB/s eta 0:00:00
+Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+   ---------------------------------------- 90.0/90.0 kB 5.0 MB/s eta 0:00:00
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ---------------------------------------- 87.3/87.3 kB ? eta 0:00:00
+Downloading multidict-6.7.0-cp312-cp312-win_amd64.whl (46 kB)
+   ---------------------------------------- 46.1/46.1 kB 2.2 MB/s eta 0:00:00
+Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 14.4 MB/s eta 0:00:00
+Downloading openai-2.8.0-py3-none-any.whl (1.0 MB)
+   ---------------------------------------- 1.0/1.0 MB 13.0 MB/s eta 0:00:00
+Downloading propcache-0.4.1-cp312-cp312-win_amd64.whl (41 kB)
+   ---------------------------------------- 41.7/41.7 kB ? eta 0:00:00
+Downloading pyee-13.0.0-py3-none-any.whl (15 kB)
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ---------------------------------------- 1.2/1.2 MB 15.6 MB/s eta 0:00:00
+Downloading regex-2025.11.3-cp312-cp312-win_amd64.whl (277 kB)
+   ---------------------------------------- 277.1/277.1 kB 5.7 MB/s eta 0:00:00
+Downloading rtree-1.4.1-py3-none-win_amd64.whl (389 kB)
+   ---------------------------------------- 389.4/389.4 kB 8.1 MB/s eta 0:00:00
+Downloading scipy-1.16.3-cp312-cp312-win_amd64.whl (38.6 MB)
+   ---------------------------------------- 38.6/38.6 MB 11.3 MB/s eta 0:00:00
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading soupsieve-2.8-py3-none-any.whl (36 kB)
+Downloading tiktoken-0.12.0-cp312-cp312-win_amd64.whl (878 kB)
+   --------------------------------------- 878.7/878.7 kB 11.1 MB/s eta 0:00:00
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+   ---------------------------------------- 78.5/78.5 kB ? eta 0:00:00
+Downloading trimesh-4.9.0-py3-none-any.whl (736 kB)
+   --------------------------------------- 736.5/736.5 kB 15.8 MB/s eta 0:00:00
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+   ---------------------------------------- 44.6/44.6 kB 2.1 MB/s eta 0:00:00
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+   ---------------------------------------- 129.8/129.8 kB 7.5 MB/s eta 0:00:00
+Downloading yarl-1.22.0-cp312-cp312-win_amd64.whl (87 kB)
+   ---------------------------------------- 87.2/87.2 kB 4.8 MB/s eta 0:00:00
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+   --------------------------------------- 308.4/308.4 kB 18.6 MB/s eta 0:00:00
+Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl (2.7 MB)
+   ---------------------------------------- 2.7/2.7 MB 14.2 MB/s eta 0:00:00
+Downloading cffi-2.0.0-cp312-cp312-win_amd64.whl (183 kB)
+   --------------------------------------- 183.6/183.6 kB 10.8 MB/s eta 0:00:00
+Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading hpack-4.1.0-py3-none-any.whl (34 kB)
+Downloading huggingface_hub-1.1.4-py3-none-any.whl (515 kB)
+   --------------------------------------- 515.6/515.6 kB 16.3 MB/s eta 0:00:00
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Downloading jiter-0.12.0-cp312-cp312-win_amd64.whl (205 kB)
+   --------------------------------------- 205.2/205.2 kB 12.2 MB/s eta 0:00:00
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading markupsafe-3.0.3-cp312-cp312-win_amd64.whl (15 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rpds_py-0.29.0-cp312-cp312-win_amd64.whl (239 kB)
+   --------------------------------------- 239.9/239.9 kB 14.4 MB/s eta 0:00:00
+Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+   --------------------------------------- 201.0/201.0 kB 11.9 MB/s eta 0:00:00
+Downloading hf_xet-1.2.0-cp37-abi3-win_amd64.whl (2.9 MB)
+   ---------------------------------------- 2.9/2.9 MB 9.8 MB/s eta 0:00:00
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+   ---------------------------------------- 66.5/66.5 kB ? eta 0:00:00
+Downloading filelock-3.20.0-py3-none-any.whl (16 kB)
+Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+   ---------------------------------------- 118.1/118.1 kB 7.2 MB/s eta 0:00:00
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading typer_slim-0.20.0-py3-none-any.whl (47 kB)
+   ---------------------------------------- 47.1/47.1 kB 2.3 MB/s eta 0:00:00
+Installing collected packages: snowballstemmer, brotli, zipp, xxhash, urllib3, typing_extensions, soupsieve, sniffio, shellingham, rtree, rpds-py, regex, PyYAML, python-dotenv, pygments, pycparser, psutil, propcache, pillow, packaging, numpy, networkx, multidict, mdurl, MarkupSafe, lxml, lark, joblib, jiter, idna, hyperframe, humanize, hpack, hf-xet, h11, greenlet, fsspec, frozenlist, filelock, fastuuid, fake-useragent, fake-http-header, distro, cssselect, colorama, charset_normalizer, chardet, certifi, attrs, annotated-types, aiohappyeyeballs, aiofiles, yarl, typing-inspection, trimesh, tqdm, shapely, scipy, requests, referencing, rank-bm25, pyee, pydantic-core, markdown-it-py, jinja2, importlib-metadata, httpcore, h2, click, cffi, beautifulsoup4, anyio, aiosqlite, aiosignal, typer-slim, tiktoken, rich, pydantic, playwright, patchright, nltk, jsonschema-specifications, httpx, cryptography, click-log, aiohttp, tf-playwright-stealth, pyOpenSSL, openai, jsonschema, huggingface-hub, alphashape, tokenizers, litellm, crawl4ai
+Successfully installed MarkupSafe-3.0.3 PyYAML-6.0.3 aiofiles-25.1.0 aiohappyeyeballs-2.6.1 aiohttp-3.13.2 aiosignal-1.4.0 aiosqlite-0.21.0 alphashape-1.3.1 annotated-types-0.7.0 anyio-4.11.0 attrs-25.4.0 beautifulsoup4-4.14.2 brotli-1.2.0 certifi-2025.11.12 cffi-2.0.0 chardet-5.2.0 charset_normalizer-3.4.4 click-8.3.1 click-log-0.4.0 colorama-0.4.6 crawl4ai-0.7.7 cryptography-46.0.3 cssselect-1.3.0 distro-1.9.0 fake-http-header-0.3.5 fake-useragent-2.2.0 fastuuid-0.14.0 filelock-3.20.0 frozenlist-1.8.0 fsspec-2025.10.0 greenlet-3.2.4 h11-0.16.0 h2-4.3.0 hf-xet-1.2.0 hpack-4.1.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-1.1.4 humanize-4.14.0 hyperframe-6.1.0 idna-3.11 importlib-metadata-8.7.0 jinja2-3.1.6 jiter-0.12.0 joblib-1.5.2 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 lark-1.3.1 litellm-1.80.0 lxml-5.4.0 markdown-it-py-4.0.0 mdurl-0.1.2 multidict-6.7.0 networkx-3.5 nltk-3.9.2 numpy-2.3.5 openai-2.8.0 packaging-25.0 patchright-1.56.0 pillow-12.0.0 playwright-1.56.0 propcache-0.4.1 psutil-7.1.3 pyOpenSSL-25.3.0 pycparser-2.23 pydantic-2.12.4 pydantic-core-2.41.5 pyee-13.0.0 pygments-2.19.2 python-dotenv-1.2.1 rank-bm25-0.2.2 referencing-0.37.0 regex-2025.11.3 requests-2.32.5 rich-14.2.0 rpds-py-0.29.0 rtree-1.4.1 scipy-1.16.3 shapely-2.1.2 shellingham-1.5.4 sniffio-1.3.1 snowballstemmer-2.2.0 soupsieve-2.8 tf-playwright-stealth-1.2.0 tiktoken-0.12.0 tokenizers-0.22.1 tqdm-4.67.1 trimesh-4.9.0 typer-slim-0.20.0 typing-inspection-0.4.2 typing_extensions-4.15.0 urllib3-2.5.0 xxhash-3.6.0 yarl-1.22.0 zipp-3.23.0

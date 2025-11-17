@@ -7,9 +7,6 @@ class Venue(BaseModel):
     """
 
     name: str
-    location: str
-    price: str
-    capacity: str
-    rating: float
-    reviews: int
-    description: str
+    address: str
+    phone: str
+    email: str
